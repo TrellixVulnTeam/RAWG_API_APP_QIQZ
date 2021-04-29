@@ -75,6 +75,17 @@ const PageList = (argument = "") => {
               recusandae alias error harum maxime adipisci amet laborum.</p>
           </div>
         </div>
+        <div class="row">
+          <div class="">
+            <select class="filter"name="pets" id="pet-select">
+              <option value=""><p>Platform : any</p></option>
+              <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="hamster">Hamster</option>
+            </select>
+          </di>
+        </div>
+      </div> 
       </section>
       <section class="page-list">
          <div class="games">...loading</div>
@@ -93,16 +104,3 @@ const PageList = (argument = "") => {
 
 export { PageList }
 
-
-// <div class="container">
-//                   <div class="row">
-//                     <div class="">
-//                     <select class="filter"name="pets" id="pet-select">
-//                       <option value=""><p>Platform : any</p></option>
-//                       <option value="dog">Dog</option>
-//                         <option value="cat">Cat</option>
-//                         <option value="hamster">Hamster</option>
-//                     </select>
-//                     </di>
-//                   </div>
-//                 </div>
