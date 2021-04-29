@@ -8,7 +8,7 @@ PageList();
 const render = () => {
   pageContent.innerHTML = `
     <section class="intro">
-      <div class="row px-5">
+      <div class="row">
         <div class="col">
           <h2 class="">Welcome</h2>
           <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,

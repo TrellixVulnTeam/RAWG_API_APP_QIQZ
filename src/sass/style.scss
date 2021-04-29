@@ -68,8 +68,13 @@ button {
   height: auto;
 }
 
-.title{
+.title {
   text-decoration: none;
+  max-width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 35px auto;
+  align-items: center;
 }
 
 a:hover {
@@ -90,6 +95,7 @@ a {
 .intro {
   width: 90%;
   height: auto;
+  margin: auto;
 }
 
 
@@ -99,6 +105,7 @@ h1 {
   font-size: $font-bg;
   font-weight: 600;
   font-family: $font-bold;
+  flex-grow: 1;
 }
 
 h2 {
@@ -130,6 +137,12 @@ h5 {
   font-family: $font-bold;
 }
 
+h6 { 
+  font-size: $font-sm;
+  color: $color-white;
+  font-style: $font-bold;
+}
+
 .screenshot {
   height: 250px;
   width: auto;
@@ -149,25 +162,27 @@ h5 {
   border: 1px solid;
   border-color: $color-white;
   max-width: 300px;
+  height: fit-content;
 }
-
-
 
 .page-list {
   display: grid;
   grid-template-rows: min-content auto min-content;
-  margin: 10em;
+  width: 90%;
 }
 
 .games {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
 }
 
-.form-control{
+.forma{
   background-color: $color-black;
   border: 0px;
+  color: $color-white;
 }
+
 
 
 .filter {

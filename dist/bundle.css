@@ -9983,6 +9983,11 @@ button {
 
 .title {
   text-decoration: none;
+  max-width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 35px auto;
+  align-items: center;
 }
 
 a:hover {
@@ -10003,6 +10008,7 @@ a {
 .intro {
   width: 90%;
   height: auto;
+  margin: auto;
 }
 
 h1 {
@@ -10011,6 +10017,7 @@ h1 {
   font-size: 45px;
   font-weight: 600;
   font-family: "Open-bold";
+  flex-grow: 1;
 }
 
 h2 {
@@ -10042,6 +10049,12 @@ h5 {
   font-family: "Open-bold";
 }
 
+h6 {
+  font-size: 16px;
+  color: white;
+  font-style: "Open-bold";
+}
+
 .screenshot {
   height: 250px;
   width: auto;
@@ -10061,22 +10074,25 @@ h5 {
   border: 1px solid;
   border-color: white;
   max-width: 300px;
+  height: fit-content;
 }
 
 .page-list {
   display: grid;
   grid-template-rows: min-content auto min-content;
-  margin: 10em;
+  width: 90%;
 }
 
 .games {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-around;
 }
 
-.form-control {
+.forma {
   background-color: black;
   border: 0px;
+  color: white;
 }
 
 .filter {
