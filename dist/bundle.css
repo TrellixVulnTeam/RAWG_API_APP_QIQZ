@@ -10090,9 +10090,14 @@ h6 {
 }
 
 .forma {
-  background-color: black;
-  border: 0px;
+  background-color: transparent;
+  border: none;
   color: white;
+  padding-right: 56px;
+}
+
+input:focus-visible {
+  outline: none;
 }
 
 .filter {
