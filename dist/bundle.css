@@ -9981,8 +9981,22 @@ button {
   height: auto;
 }
 
+.title {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #D20A33;
+  text-decoration: none;
+}
+
+a {
+  color: #D20A33;
+  text-decoration: none;
+}
+
 .article {
-  width: 90%;
+  width: 100%;
   height: auto;
 }
 
@@ -10052,6 +10066,7 @@ h5 {
 .page-list {
   display: grid;
   grid-template-rows: min-content auto min-content;
+  margin: 10em;
 }
 
 .games {

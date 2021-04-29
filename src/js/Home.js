@@ -1,9 +1,9 @@
 
 
-import { PageList } from './Pagelist'
+import { PageList } from './PageList'
 
 const Home = (argument = "") => {
-  PageList();
+PageList();
 
 const render = () => {
   pageContent.innerHTML = `
@@ -22,10 +22,15 @@ const render = () => {
         </div>
       </div>
     </section>
+    <section class="page-list m-4">
+        <div class="games">...loading</div>
+    </section>
+    <section class="button">
+        <button>Show more</button>
+    </section>
 
   `;
 
-  preparePage();
 };
 
 render();

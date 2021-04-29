@@ -68,8 +68,22 @@ button {
   height: auto;
 }
 
+.title{
+  text-decoration: none;
+}
+
+a:hover {
+  color: $color-red;
+  text-decoration: none;
+}
+
+a {
+  color: $color-red;
+  text-decoration: none;
+}
+
 .article {
-  width: 90%;
+  width: 100%;
   height: auto;
 }
 
@@ -142,6 +156,7 @@ h5 {
 .page-list {
   display: grid;
   grid-template-rows: min-content auto min-content;
+  margin: 10em;
 }
 
 .games {

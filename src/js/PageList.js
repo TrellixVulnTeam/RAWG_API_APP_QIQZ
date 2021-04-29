@@ -1,18 +1,17 @@
 const PageList = (argument = "") => {
   
   const preparePage = () => {
-    // cleanedArgument = argument.replace(/\s+/g, "-");
+    let cleanedArgument = argument.replace(/\s+/g, "-");
     let games = "";
     let filter ="";
 
-    const fetchList = (url, argument) => {
-      let api = `key=${process.env.API_KEY}`
-      let finalURL = url + api;
+    const fetchList = (url, cleanedArgument) => {
+      let finalURL = url
       if (argument) {
-        finalURL = url + api + "&search=" + argument;
-      }
-
-      var platforms = ""
+        finalURL = url + "&search=" + cleanedArgument;
+      } else if (argument = "") {
+        finalURL = url + "&dates=2022-01-01,2022-12-31";
+        };
 
       fetch(`${finalURL}`)
         .then(console.log(finalURL))
@@ -21,23 +20,18 @@ const PageList = (argument = "") => {
 
 
           response.results.forEach((article) => {
-              
-            
-            
             let{id, background_image, name,} = response;
             
             let logo = ""
             article.parent_platforms.forEach((platform) => {
               // logo += `${platform.platform.name} `
               logo +=  `
-              
               <img class="logoImg" src="src/images/logos/${platform.platform.slug}.svg">
               `
             })
             console.log(logo);
               
               games += `
-              
               <div class="card m-3" style="width: 18rem;">
                 <a href = "#pagedetail/${article.id}">
                 <img href="#pagedetail/${article.id}" class="card-img-top" src="${article.background_image}" alt="Card image cap">
@@ -59,7 +53,7 @@ const PageList = (argument = "") => {
     }
     
       
-      fetchList("https://api.rawg.io/api/games?", argument);
+      fetchList(`https://api.rawg.io/api/games?key=${process.env.API_KEY}`, argument);
     };
     
 

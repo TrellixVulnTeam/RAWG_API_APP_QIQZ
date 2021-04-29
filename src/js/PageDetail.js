@@ -73,29 +73,29 @@ const PageDetail = (argument) => {
           <img class="myclass" src="src"></img>
           <div class="row mt-5">
             <div class="col-xl">
-              <h1 class="title"></h1>
+              <h1 class="title mx-5"></h1>
             </div>
             <div class="col d-flex justify-content-end">
-              <h5 class="rate"></h5>
+              <h5 class="rate mx-5"></h5>
             </div>
           </div>
-            <p class="description"></p>
+            <p class="description m-5"></p>
             <div class="container">
               <div class="row">
                 <div class="col">
-                  <p> Release date </p>
+                  <h6> Release date <h6>
                   <p class="release-date"><span></span></p>
                 </div>
                 <div class="col">
-                  <p> Developer </p>
+                  <h6> Developer </h6>
                   <p class="developer"><span></span></p>
                 </div>
                 <div class="col">
-                  <p> Platforms </p>
+                  <h6> Platforms <h6>
                   <p class="consoles"><span></span></p>
                 </div>
                 <div class="col">
-                  <p> Publiser </p>
+                  <h6> Publiser <h6>
                   <p class="publisher"><span></span></p>
                 </div>
               </div>
@@ -103,11 +103,11 @@ const PageDetail = (argument) => {
             <div class="container">
               <div class="row">
                 <div class="col-md">
-                  <p> Genre </p>
+                  <h6> Genre <h6>
                   <p class="genre"> </p>
                   </div>
                   <div class="col-xl">
-                  <p> Tags </p>
+                  <h6> Tags <h6>
                   <p class="tag"> </p>
                   </div>
               </div>
