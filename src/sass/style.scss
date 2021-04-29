@@ -1,0 +1,248 @@
+@import "~bootstrap/scss/bootstrap";
+@font-face {
+  font-family: 'OrelegaOne';
+  src: url('../fonts/OrelegaOne-Regular.ttf');
+} 
+
+@font-face {
+  font-family: 'Easter' ;
+  src: url('../fonts/eastman_grotesque/Eastman-Grotesque-Regular-trial.otf');
+}
+
+@font-face {
+  font-family: 'Open' ;
+  src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Open-bold' ;
+  src: url('../fonts/Open_Sans/OpenSans-Bold.ttf');
+}
+
+$font: 'Open';
+$font-bold: 'Open-bold';
+
+$color-red: #D20A33;
+$color-white: white;
+$color-black: black;
+
+$font-sm: 16px;
+$font-bg: 45px;
+$font-md: 30px;
+
+
+body {
+  background-color: $color-black;
+  height: 100vh;
+}
+
+p {
+  color: $color-white;
+  font-size: $font-sm;
+  font-weight: 200;
+  line-height:1.5em;
+  font-family: $font;
+}
+
+button {
+  background-color:$color-red; /* Green */
+  border: none;
+  color: $color-white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: $font-sm;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+}
+
+
+.myclass {
+  width: 100%;
+  height: auto;
+}
+
+.article {
+  width: 90%;
+  height: auto;
+}
+
+.intro {
+  width: 90%;
+  height: auto;
+}
+
+
+h1 {
+  color: $color-white;
+  font-family: $font;
+  font-size: $font-bg;
+  font-weight: 600;
+  font-family: $font-bold;
+}
+
+h2 {
+  color: $color-white;
+  font-family: $font;
+  font-size: $font-bg;
+  font-family: $font-bold;
+}
+ 
+h3 {
+  color: $color-red;
+  font-family: $font;
+  font-size: $font-bg;
+  font-family: $font-bold;
+}
+
+h4 {
+  color: $color-white;
+  font-family: $font;
+  font-size: $font-md;
+  font-family: $font;
+}
+ 
+h5 {
+  color: $color-red;
+  font-family: $font;
+  font-size: $font-md;
+  font-weight: 600;
+  font-family: $font-bold;
+}
+
+.screenshot {
+  height: 250px;
+  width: auto;
+}
+
+.card {
+  background-color: $color-black;
+}
+
+.list-group-item {
+  background-color: $color-black;
+}
+
+.myform {
+  background-color: $color-black;
+  border-radius: 50px;
+  border: 1px solid;
+  border-color: $color-white;
+  max-width: 300px;
+}
+
+
+
+.page-list {
+  display: grid;
+  grid-template-rows: min-content auto min-content;
+}
+
+.games {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.form-control{
+  background-color: $color-black;
+  border: 0px;
+}
+
+
+.filter {
+  background-color: $color-red;
+
+}
+
+select  {
+color: $color-white;
+font-size: 20px;
+font-weight: 200;
+line-height:1.5em;
+font-family: $font;
+padding-block:0.5em;
+padding-inline: 2em;
+margin: 20px;
+border: 0px;
+}
+
+.logoImg {
+  height: 20px;
+  margin-right: 10px
+}
+
+.card-body {
+  padding-right: 1.25rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 0rem;
+}
+
+// .PC {
+//   background-image: url("/Users/julestexier/Google_Drive/PRO/THP_NEXT/Semaine 4/Jour_2/down74/src/images/logos/windows.svg");
+//   background-repeat: no-repeat;
+//   height: 50px;
+//   width: auto;
+// }
+// .PlayStation {
+//   background-image: url("/Users/julestexier/Google_Drive/PRO/THP_NEXT/Semaine 4/Jour_2/down74/src/images/logos/ps4.svg");
+//   background-repeat: no-repeat;
+//   height: 50px;
+//   width: auto;
+// }
+// .Nintendo {
+//   background-image: url("/Users/julestexier/Google_Drive/PRO/THP_NEXT/Semaine 4/Jour_2/down74/src/images/logos/switch.svg");
+//   background-repeat: no-repeat;
+//   height: 50px;
+//   width: auto;
+// }
+// .Android {
+//   background-image: url("/Users/julestexier/Google_Drive/PRO/THP_NEXT/Semaine 4/Jour_2/down74/src/images/logos/mobile.svg");
+//   background-repeat: no-repeat;
+//   height: 50px;
+//   width: auto;
+// }
+
+// .Linux {
+//   background-image: url("/Users/julestexier/Google_Drive/PRO/THP_NEXT/Semaine 4/Jour_2/down74/src/images/logos/linux.svg");
+//   background-repeat: no-repeat;
+//   height: 50px;
+//   width: auto;
+// }
+
+// .Apple_Macintosh {
+//   background-image: url("/Users/julestexier/Google_Drive/PRO/THP_NEXT/Semaine 4/Jour_2/down74/src/images/logos/apple-appstore.svg");
+//   background-repeat: no-repeat;
+//   height: 50px;
+//   width: auto;
+// }
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+// svg {
+//   filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(289deg) brightness(105%) contrast(101%);
+// }
+
+// .rounded-input {
+//   padding:10px;
+//   border-radius:10px;
+// }
+
+// .form-control {
+//   border: 2px solid black;
+// }
+
+// .form-control{
+//   padding:10px!;
+//   border-radius:30px!;
+// }
+
